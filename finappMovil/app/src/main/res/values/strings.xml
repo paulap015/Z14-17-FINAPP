@@ -6,8 +6,8 @@
     <string name="login_acceder">Acceder</string>
 
     <string name="main_listar">Sucursales</string>
-    <string name="main_add">Administrar</string>
-    <string name="main_about">Nosotros..</string>
+    <string name="main_admin">Administrar</string>
+    <string name="main_about">Nosotros</string>
 
     <string name="main_contacto">Contacto mantenimiento </string>
     <string name="main_calle">Nosotros..</string>
