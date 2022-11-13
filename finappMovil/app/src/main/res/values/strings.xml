@@ -11,5 +11,13 @@
 
     <string name="main_contacto">Contacto mantenimiento </string>
     <string name="main_calle">Nosotros..</string>
-    <string name="main_">Nosotros..</string>
+
+    <string name="registro_id">Codigo </string>
+    <string name="registro_tipodoc">Tipo Documento</string>
+    <string name="registro_documento">Documento</string>
+    <string name="registro_nombre">Nombre completo</string>
+    <string name="registro_correo">Correo</string>
+    <string name="registro_clave">Contraseña</string>
+
+
 </resources>
