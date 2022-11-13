@@ -19,7 +19,7 @@ public class Usuario {
         this.nombre = nombre;
         this.correo = correo;
         this.clave = clave;
-        //this.id =valorId;
+        this.id =valorId;
 
     }
 
