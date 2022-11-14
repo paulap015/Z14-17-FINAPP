@@ -14,11 +14,11 @@ public class MessageDialog extends DialogFragment {
     public Dialog onCreateDialog(Bundle estado){
         AlertDialog.Builder mensaje = new AlertDialog.Builder(getActivity());
         mensaje.setTitle("Confirmación");
-        mensaje.setMessage("La accion que realizara eliminara tal cosa. 'Esta seguro de hacer esta acción? ");
+        mensaje.setMessage("Vas a ingresar a  'Esta seguro de hacer esta acción? ");
         mensaje.setPositiveButton("Si", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(getActivity(),"Se ha eliminado el registro",Toast.LENGTH_SHORT);
+                //Toast.makeText(getActivity(),"Se ha eliminado el registro",Toast.LENGTH_SHORT);
             }
         });
         mensaje.setNegativeButton("No", new DialogInterface.OnClickListener() {

@@ -9,6 +9,7 @@
     <string name="login_acceder">Acceder</string>
     <string name="login_registro">Registrar</string>
 
+    <string name="main_titulo">BIENVENIDO </string>
     <string name="main_listar">Sucursales</string>
     <string name="main_admin">Administrar</string>
     <string name="main_about">Nosotros</string>

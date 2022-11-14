@@ -24,7 +24,22 @@ public class DBConnection  extends SQLiteOpenHelper {
                 "    correo         VARCHAR (30) NOT NULL,\n" +
                 "    clave          VARCHAR (80) NOT NULL\n" +
                 ")");
-        //db.execSQL("DROP TABLE usuario");
+
+        db.execSQL("CREATE TABLE banco (\n" +
+                "    id     INTEGER      PRIMARY KEY AUTOINCREMENT\n" +
+                "                        NOT NULL,\n" +
+                "    nombre VARCHAR (30) NOT NULL,\n" +
+                "    nit    VARCHAR (30) NOT NULL UNIQUE\n" +
+                ")");
+        db.execSQL("CREATE TABLE sucursal (\n" +
+                "    id                         PRIMARY KEY AUTOINCREMENT\n" +
+                "                               NOT NULL,\n" +
+                "    tipo_sucursal INTEGER      NOT NULL,\n" +
+                "    nit_banco     VARCHAR (30) NOT NULL,\n" +
+                "    direccion     VARCHAR (30) NOT NULL\n" +
+                ");");
+
+        System.out.println("IMPRIMIENDO banco creado ");
     }
 
     @Override
