@@ -1,15 +1,31 @@
 <resources>
     <string name="app_name">finappMovil</string>
+    <string name="app_name_upper">FINAPP</string>
 
+
+    <string name="login_titulo">INICIO SESION</string>
     <string name="login_usuario">Usuario</string>
     <string name="login_clave">Contraseña</string>
     <string name="login_acceder">Acceder</string>
+    <string name="login_registro">Registrar</string>
 
+    <string name="main_titulo">BIENVENIDO </string>
     <string name="main_listar">Sucursales</string>
-    <string name="main_add">Administrar</string>
-    <string name="main_about">Nosotros..</string>
+    <string name="main_admin">Administrar</string>
+    <string name="main_about">Nosotros</string>
 
     <string name="main_contacto">Contacto mantenimiento </string>
     <string name="main_calle">Nosotros..</string>
-    <string name="main_">Nosotros..</string>
+
+    <string name="registro_titulo">REGISTRO </string>
+    <string name="registro_id">Codigo </string>
+    <string name="registro_tipodoc">Tipo Documento</string>
+    <string name="registro_documento">Documento</string>
+    <string name="registro_nombre">Nombre completo</string>
+    <string name="registro_correo">Correo</string>
+    <string name="registro_clave">Contraseña</string>
+    <string name="registro_guardar">Registrar</string>
+    <string name="registro_login">Inicia sesión</string>
+
+
 </resources>

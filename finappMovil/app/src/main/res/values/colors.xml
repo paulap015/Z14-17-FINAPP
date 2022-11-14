@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="finapp_1">#027373</color>
+    <color name="finapp_2">#038C7F</color>
+    <color name="finapp_3">#A9D9D0</color>
+    <color name="finapp_4">#F2E7DC</color>
+    <color name="finapp_5">#0D0D0D</color>
+
 </resources>
