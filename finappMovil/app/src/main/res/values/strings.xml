@@ -27,5 +27,9 @@
     <string name="registro_guardar">Registrar</string>
     <string name="registro_login">Inicia sesión</string>
 
+    <string name="listar_titulo">SUCURSALES</string>
+    <string name="listar_buscar_banco">Banco</string>
+    <string name="listar_buscar_direccion">Direccion</string>
+
 
 </resources>

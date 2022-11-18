@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.misiontic.finappmovil.dao.UsuarioDao;
@@ -14,7 +16,7 @@ import com.misiontic.finappmovil.models.Usuario;
 
 public class AgregarUsuarioActivity extends AppCompatActivity {
 
-    private EditText txtTipoDoc;
+    private Spinner spnTipoDoc;
     private EditText txtDoc;
     private EditText txtNombre;
     private EditText txtCorreo;
@@ -25,12 +27,15 @@ public class AgregarUsuarioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_usuario);
-        txtTipoDoc = findViewById(R.id.registro_txtTipoDoc);
+        spnTipoDoc = findViewById(R.id.registro_spnTipDoc);
         txtDoc = findViewById(R.id.registro_txtDocumento);
         txtNombre = findViewById(R.id.registro_txtNombre);
         txtCorreo = findViewById(R.id.registro_txtCorreo);
         txtClave = findViewById(R.id.registro_txtClave);
 
+        String[] tiposDocumento ={"CC","TI","RC","PA"};
+        ArrayAdapter adaptador = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,tiposDocumento);
+        spnTipoDoc.setAdapter(adaptador);
         Button btnGuardar = findViewById(R.id.registro_btnGuardar);
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +71,7 @@ public class AgregarUsuarioActivity extends AppCompatActivity {
 
     public Usuario cargarModelo(){
         Usuario modelo=null;
-        String tipDoc = txtTipoDoc.getText().toString();
+        String tipDoc = spnTipoDoc.getSelectedItem().toString();
         String documento=txtDoc.getText().toString();
         String nombre = txtNombre.getText().toString();
         String correo = txtCorreo.getText().toString();
@@ -78,7 +83,7 @@ public class AgregarUsuarioActivity extends AppCompatActivity {
         return modelo;
     }
     private void limpiarForm(){
-        txtTipoDoc.setText("");
+        spnTipoDoc.setSelection(0);
         txtDoc.setText("");
         txtNombre.setText("");
         txtCorreo.setText("");

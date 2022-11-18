@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
                     Toast.makeText(MainActivity.this, "Ya se ha otrogado ete permiso", Toast.LENGTH_SHORT).show();
+
+                    Intent intent =new Intent(view.getContext(),ListarSucursalesActivity.class);
+                    startActivity(intent);
                 }else{
                     requestLocationPermission();
                 }
